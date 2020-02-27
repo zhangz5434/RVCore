@@ -1,0 +1,141 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 256 320)
+	(text "ControlUnit" (rect 5 0 48 12)(font "Arial" ))
+	(text "inst" (rect 8 288 20 300)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "INST[31..0]" (rect 0 0 44 12)(font "Arial" ))
+		(text "INST[31..0]" (rect 21 27 65 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 240 32)
+		(output)
+		(text "REGA[4..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "REGA[4..0]" (rect 168 27 219 39)(font "Arial" ))
+		(line (pt 240 32)(pt 224 32)(line_width 3))
+	)
+	(port
+		(pt 240 48)
+		(output)
+		(text "REGB[4..0]" (rect 0 0 49 12)(font "Arial" ))
+		(text "REGB[4..0]" (rect 170 43 219 55)(font "Arial" ))
+		(line (pt 240 48)(pt 224 48)(line_width 3))
+	)
+	(port
+		(pt 240 64)
+		(output)
+		(text "REGW[4..0]" (rect 0 0 54 12)(font "Arial" ))
+		(text "REGW[4..0]" (rect 165 59 219 71)(font "Arial" ))
+		(line (pt 240 64)(pt 224 64)(line_width 3))
+	)
+	(port
+		(pt 240 80)
+		(output)
+		(text "ALUOP[3..0]" (rect 0 0 54 12)(font "Arial" ))
+		(text "ALUOP[3..0]" (rect 165 75 219 87)(font "Arial" ))
+		(line (pt 240 80)(pt 224 80)(line_width 3))
+	)
+	(port
+		(pt 240 96)
+		(output)
+		(text "BRANCHOP[2..0]" (rect 0 0 76 12)(font "Arial" ))
+		(text "BRANCHOP[2..0]" (rect 143 91 219 103)(font "Arial" ))
+		(line (pt 240 96)(pt 224 96)(line_width 3))
+	)
+	(port
+		(pt 240 112)
+		(output)
+		(text "BRANCH" (rect 0 0 43 12)(font "Arial" ))
+		(text "BRANCH" (rect 176 107 219 119)(font "Arial" ))
+		(line (pt 240 112)(pt 224 112)(line_width 1))
+	)
+	(port
+		(pt 240 128)
+		(output)
+		(text "JUMP" (rect 0 0 25 12)(font "Arial" ))
+		(text "JUMP" (rect 194 123 219 135)(font "Arial" ))
+		(line (pt 240 128)(pt 224 128)(line_width 1))
+	)
+	(port
+		(pt 240 144)
+		(output)
+		(text "REGWRITE" (rect 0 0 56 12)(font "Arial" ))
+		(text "REGWRITE" (rect 163 139 219 151)(font "Arial" ))
+		(line (pt 240 144)(pt 224 144)(line_width 1))
+	)
+	(port
+		(pt 240 160)
+		(output)
+		(text "MEMWRITE" (rect 0 0 57 12)(font "Arial" ))
+		(text "MEMWRITE" (rect 162 155 219 167)(font "Arial" ))
+		(line (pt 240 160)(pt 224 160)(line_width 1))
+	)
+	(port
+		(pt 240 176)
+		(output)
+		(text "WBFROM[1..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "WBFROM[1..0]" (rect 155 171 219 183)(font "Arial" ))
+		(line (pt 240 176)(pt 224 176)(line_width 3))
+	)
+	(port
+		(pt 240 192)
+		(output)
+		(text "INAISREGA" (rect 0 0 56 12)(font "Arial" ))
+		(text "INAISREGA" (rect 163 187 219 199)(font "Arial" ))
+		(line (pt 240 192)(pt 224 192)(line_width 1))
+	)
+	(port
+		(pt 240 208)
+		(output)
+		(text "INBISREGB" (rect 0 0 51 12)(font "Arial" ))
+		(text "INBISREGB" (rect 168 203 219 215)(font "Arial" ))
+		(line (pt 240 208)(pt 224 208)(line_width 1))
+	)
+	(port
+		(pt 240 224)
+		(output)
+		(text "JUMPBASEISPC" (rect 0 0 74 12)(font "Arial" ))
+		(text "JUMPBASEISPC" (rect 145 219 219 231)(font "Arial" ))
+		(line (pt 240 224)(pt 224 224)(line_width 1))
+	)
+	(port
+		(pt 240 240)
+		(output)
+		(text "DATAFORMAT[2..0]" (rect 0 0 93 12)(font "Arial" ))
+		(text "DATAFORMAT[2..0]" (rect 126 235 219 247)(font "Arial" ))
+		(line (pt 240 240)(pt 224 240)(line_width 3))
+	)
+	(port
+		(pt 240 256)
+		(output)
+		(text "HALT" (rect 0 0 27 12)(font "Arial" ))
+		(text "HALT" (rect 192 251 219 263)(font "Arial" ))
+		(line (pt 240 256)(pt 224 256)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 224 288)(line_width 1))
+	)
+)

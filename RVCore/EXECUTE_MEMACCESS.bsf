@@ -1,0 +1,148 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 456 208)
+	(text "EXECUTE_MEMACCESS" (rect 5 0 140 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "REGB[31..0]" (rect 0 0 68 14)(font "Arial" (font_size 8)))
+		(text "REGB[31..0]" (rect 21 27 89 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "ALU_OUT[31..0]" (rect 0 0 92 14)(font "Arial" (font_size 8)))
+		(text "ALU_OUT[31..0]" (rect 21 43 113 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "INSTRUCTION_ADDRESS[31..0]" (rect 0 0 178 14)(font "Arial" (font_size 8)))
+		(text "INSTRUCTION_ADDRESS[31..0]" (rect 21 59 199 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "DATAFORMAT[2..0]" (rect 0 0 113 14)(font "Arial" (font_size 8)))
+		(text "DATAFORMAT[2..0]" (rect 21 75 134 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "REGW_SELECT[4..0]" (rect 0 0 116 14)(font "Arial" (font_size 8)))
+		(text "REGW_SELECT[4..0]" (rect 21 91 137 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "WRITEBACKFROM[1..0]" (rect 0 0 133 14)(font "Arial" (font_size 8)))
+		(text "WRITEBACKFROM[1..0]" (rect 21 107 154 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "REG_WRITE" (rect 0 0 68 14)(font "Arial" (font_size 8)))
+		(text "REG_WRITE" (rect 21 123 89 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "MEM_WRITE" (rect 0 0 69 14)(font "Arial" (font_size 8)))
+		(text "MEM_WRITE" (rect 21 139 90 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "CLOCK" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "CLOCK" (rect 21 155 62 169)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 440 32)
+		(output)
+		(text "REGB_OUT[31..0]" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "REGB_OUT[31..0]" (rect 319 27 419 41)(font "Arial" (font_size 8)))
+		(line (pt 440 32)(pt 424 32)(line_width 3))
+	)
+	(port
+		(pt 440 48)
+		(output)
+		(text "ALU_OUT_EX[31..0]" (rect 0 0 114 14)(font "Arial" (font_size 8)))
+		(text "ALU_OUT_EX[31..0]" (rect 305 43 419 57)(font "Arial" (font_size 8)))
+		(line (pt 440 48)(pt 424 48)(line_width 3))
+	)
+	(port
+		(pt 440 64)
+		(output)
+		(text "INSTRUCTION_ADDRESS_OUT[31..0]" (rect 0 0 210 14)(font "Arial" (font_size 8)))
+		(text "INSTRUCTION_ADDRESS_OUT[31..0]" (rect 209 59 419 73)(font "Arial" (font_size 8)))
+		(line (pt 440 64)(pt 424 64)(line_width 3))
+	)
+	(port
+		(pt 440 80)
+		(output)
+		(text "DATAFORMAT_OUT[2..0]" (rect 0 0 145 14)(font "Arial" (font_size 8)))
+		(text "DATAFORMAT_OUT[2..0]" (rect 274 75 419 89)(font "Arial" (font_size 8)))
+		(line (pt 440 80)(pt 424 80)(line_width 3))
+	)
+	(port
+		(pt 440 96)
+		(output)
+		(text "REGW_SELECT_OUT[4..0]" (rect 0 0 148 14)(font "Arial" (font_size 8)))
+		(text "REGW_SELECT_OUT[4..0]" (rect 271 91 419 105)(font "Arial" (font_size 8)))
+		(line (pt 440 96)(pt 424 96)(line_width 3))
+	)
+	(port
+		(pt 440 112)
+		(output)
+		(text "WRITEBACKFROM_OUT[1..0]" (rect 0 0 165 14)(font "Arial" (font_size 8)))
+		(text "WRITEBACKFROM_OUT[1..0]" (rect 254 107 419 121)(font "Arial" (font_size 8)))
+		(line (pt 440 112)(pt 424 112)(line_width 3))
+	)
+	(port
+		(pt 440 128)
+		(output)
+		(text "REG_WRITE_OUT" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "REG_WRITE_OUT" (rect 319 123 419 137)(font "Arial" (font_size 8)))
+		(line (pt 440 128)(pt 424 128))
+	)
+	(port
+		(pt 440 144)
+		(output)
+		(text "MEM_WRITE_OUT" (rect 0 0 101 14)(font "Arial" (font_size 8)))
+		(text "MEM_WRITE_OUT" (rect 318 139 419 153)(font "Arial" (font_size 8)))
+		(line (pt 440 144)(pt 424 144))
+	)
+	(drawing
+		(rectangle (rect 16 16 424 176))
+	)
+)

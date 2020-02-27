@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ADDER is
+	port (
+		INPUT_A : IN std_logic_vector(31 downto 0);
+		INPUT_B : in std_logic_vector(31 downto 0);
+		OUTPUT : out std_logic_vector(31 downto 0)
+	);
+end ADDER;
+
+architecture Behavioral of ADDER is
+	signal TMP : std_logic_vector (32 downto 0) := "000000000000000000000000000000000";
+begin
+	process (INPUT_A, INPUT_B, TMP) is
+	begin
+		TMP <= std_logic_vector(signed(INPUT_A(31) & INPUT_A) + signed(INPUT_B(31) & INPUT_B));
+	end process;
+
+	OUTPUT <= TMP(31 downto 0);
+
+end Behavioral;

@@ -1,0 +1,23 @@
+Library ieee;
+Use ieee.std_logic_1164.all;
+Use ieee.numeric_std.all;
+
+Entity Decoder is
+	Port(
+		SELECTOR : IN std_logic_vector(4 downto 0);
+		SELECTED : OUT std_logic_vector(31 downto 0)
+	)
+End Entity Decoder;
+
+Architecture Behavioral of Decoder is 
+Begin
+	Process(SELECTOR) is
+	Begin
+		case SELECTOR is
+			when "00000" =>
+				SELECTED <= "00000000000000000000000000000001";
+			when "00001" =>
+				SELECTED <= "00000000000000000000000000000010";
+	End Process
+	
+End Architecture Behavioral;

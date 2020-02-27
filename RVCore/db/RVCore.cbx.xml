@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="RVCore">
+		<CBX_INST_ENTRY INSTANCE_NAME="|RVCore|MMU:inst26|RAMPart:RAMUnit1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_i2s3.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RVCore|MMU:inst26|RAMPart:RAMUnit3|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_i2s3.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RVCore|ROMBlock:Program|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_b6u3.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RVCore|MMU:inst26|RAMPart:RAMUnit0|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_i2s3.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|RVCore|MMU:inst26|RAMPart:RAMUnit2|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_i2s3.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

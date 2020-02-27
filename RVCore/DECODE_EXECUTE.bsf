@@ -1,0 +1,260 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 472 336)
+	(text "DECODE_EXECUTE" (rect 5 0 113 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 304 25 316)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "REGA_IN[31..0]" (rect 0 0 87 14)(font "Arial" (font_size 8)))
+		(text "REGA_IN[31..0]" (rect 21 27 108 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "REGB_IN[31..0]" (rect 0 0 86 14)(font "Arial" (font_size 8)))
+		(text "REGB_IN[31..0]" (rect 21 43 107 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "INSTRUCTION_ADDRESS_IN[31..0]" (rect 0 0 195 14)(font "Arial" (font_size 8)))
+		(text "INSTRUCTION_ADDRESS_IN[31..0]" (rect 21 59 216 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "IMMEDATE[31..0]" (rect 0 0 95 14)(font "Arial" (font_size 8)))
+		(text "IMMEDATE[31..0]" (rect 21 75 116 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "ALU_OPTION[3..0]" (rect 0 0 103 14)(font "Arial" (font_size 8)))
+		(text "ALU_OPTION[3..0]" (rect 21 91 124 105)(font "Arial" (font_size 8)))
+		(line (pt 0 96)(pt 16 96)(line_width 3))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "BRANCH_OPTION[2..0]" (rect 0 0 129 14)(font "Arial" (font_size 8)))
+		(text "BRANCH_OPTION[2..0]" (rect 21 107 150 121)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "BRANCH_SWITCHER" (rect 0 0 119 14)(font "Arial" (font_size 8)))
+		(text "BRANCH_SWITCHER" (rect 21 123 140 137)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 16 128))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "JUMP_SIGNAL" (rect 0 0 82 14)(font "Arial" (font_size 8)))
+		(text "JUMP_SIGNAL" (rect 21 139 103 153)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 16 144))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "REG_WRITE" (rect 0 0 68 14)(font "Arial" (font_size 8)))
+		(text "REG_WRITE" (rect 21 155 89 169)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 16 160))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "MEM_WRITE" (rect 0 0 69 14)(font "Arial" (font_size 8)))
+		(text "MEM_WRITE" (rect 21 171 90 185)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "WRITE_BACK_FROM[1..0]" (rect 0 0 147 14)(font "Arial" (font_size 8)))
+		(text "WRITE_BACK_FROM[1..0]" (rect 21 187 168 201)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 16 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "INA_IS_REGA" (rect 0 0 79 14)(font "Arial" (font_size 8)))
+		(text "INA_IS_REGA" (rect 21 203 100 217)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 16 208))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "INB_IS_REGB" (rect 0 0 76 14)(font "Arial" (font_size 8)))
+		(text "INB_IS_REGB" (rect 21 219 97 233)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 16 224))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "JUMP_IS_PC" (rect 0 0 70 14)(font "Arial" (font_size 8)))
+		(text "JUMP_IS_PC" (rect 21 235 91 249)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 16 240))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "DATA_FORMAT[2..0]" (rect 0 0 120 14)(font "Arial" (font_size 8)))
+		(text "DATA_FORMAT[2..0]" (rect 21 251 141 265)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 16 256)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "REGW_SELECTOR[4..0]" (rect 0 0 134 14)(font "Arial" (font_size 8)))
+		(text "REGW_SELECTOR[4..0]" (rect 21 267 155 281)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 16 272)(line_width 3))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "CLOCK" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "CLOCK" (rect 21 283 62 297)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 16 288))
+	)
+	(port
+		(pt 456 32)
+		(output)
+		(text "REGA_OUT[31..0]" (rect 0 0 101 14)(font "Arial" (font_size 8)))
+		(text "REGA_OUT[31..0]" (rect 334 27 435 41)(font "Arial" (font_size 8)))
+		(line (pt 456 32)(pt 440 32)(line_width 3))
+	)
+	(port
+		(pt 456 48)
+		(output)
+		(text "REGB_OUT[31..0]" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "REGB_OUT[31..0]" (rect 335 43 435 57)(font "Arial" (font_size 8)))
+		(line (pt 456 48)(pt 440 48)(line_width 3))
+	)
+	(port
+		(pt 456 64)
+		(output)
+		(text "INSTRUCTION_ADDRESS_OUT[31..0]" (rect 0 0 210 14)(font "Arial" (font_size 8)))
+		(text "INSTRUCTION_ADDRESS_OUT[31..0]" (rect 225 59 435 73)(font "Arial" (font_size 8)))
+		(line (pt 456 64)(pt 440 64)(line_width 3))
+	)
+	(port
+		(pt 456 80)
+		(output)
+		(text "IMMEDATE_OUT[31..0]" (rect 0 0 127 14)(font "Arial" (font_size 8)))
+		(text "IMMEDATE_OUT[31..0]" (rect 308 75 435 89)(font "Arial" (font_size 8)))
+		(line (pt 456 80)(pt 440 80)(line_width 3))
+	)
+	(port
+		(pt 456 96)
+		(output)
+		(text "ALU_OPTION_OUT[3..0]" (rect 0 0 135 14)(font "Arial" (font_size 8)))
+		(text "ALU_OPTION_OUT[3..0]" (rect 300 91 435 105)(font "Arial" (font_size 8)))
+		(line (pt 456 96)(pt 440 96)(line_width 3))
+	)
+	(port
+		(pt 456 112)
+		(output)
+		(text "BRANCH_OPTION_OUT[2..0]" (rect 0 0 161 14)(font "Arial" (font_size 8)))
+		(text "BRANCH_OPTION_OUT[2..0]" (rect 274 107 435 121)(font "Arial" (font_size 8)))
+		(line (pt 456 112)(pt 440 112)(line_width 3))
+	)
+	(port
+		(pt 456 128)
+		(output)
+		(text "BRANCH_SWITCHER_OUT" (rect 0 0 151 14)(font "Arial" (font_size 8)))
+		(text "BRANCH_SWITCHER_OUT" (rect 284 123 435 137)(font "Arial" (font_size 8)))
+		(line (pt 456 128)(pt 440 128))
+	)
+	(port
+		(pt 456 144)
+		(output)
+		(text "JUMP_SIGNAL_OUT" (rect 0 0 114 14)(font "Arial" (font_size 8)))
+		(text "JUMP_SIGNAL_OUT" (rect 321 139 435 153)(font "Arial" (font_size 8)))
+		(line (pt 456 144)(pt 440 144))
+	)
+	(port
+		(pt 456 160)
+		(output)
+		(text "REG_WRITE_OUT" (rect 0 0 100 14)(font "Arial" (font_size 8)))
+		(text "REG_WRITE_OUT" (rect 335 155 435 169)(font "Arial" (font_size 8)))
+		(line (pt 456 160)(pt 440 160))
+	)
+	(port
+		(pt 456 176)
+		(output)
+		(text "MEM_WRITE_OUT" (rect 0 0 101 14)(font "Arial" (font_size 8)))
+		(text "MEM_WRITE_OUT" (rect 334 171 435 185)(font "Arial" (font_size 8)))
+		(line (pt 456 176)(pt 440 176))
+	)
+	(port
+		(pt 456 192)
+		(output)
+		(text "WRITE_BACK_FROM_OUT[1..0]" (rect 0 0 179 14)(font "Arial" (font_size 8)))
+		(text "WRITE_BACK_FROM_OUT[1..0]" (rect 256 187 435 201)(font "Arial" (font_size 8)))
+		(line (pt 456 192)(pt 440 192)(line_width 3))
+	)
+	(port
+		(pt 456 208)
+		(output)
+		(text "INA_IS_REGA_OUT" (rect 0 0 110 14)(font "Arial" (font_size 8)))
+		(text "INA_IS_REGA_OUT" (rect 325 203 435 217)(font "Arial" (font_size 8)))
+		(line (pt 456 208)(pt 440 208))
+	)
+	(port
+		(pt 456 224)
+		(output)
+		(text "INB_IS_REGB_OUT" (rect 0 0 108 14)(font "Arial" (font_size 8)))
+		(text "INB_IS_REGB_OUT" (rect 327 219 435 233)(font "Arial" (font_size 8)))
+		(line (pt 456 224)(pt 440 224))
+	)
+	(port
+		(pt 456 240)
+		(output)
+		(text "JUMP_IS_PC_OUT" (rect 0 0 102 14)(font "Arial" (font_size 8)))
+		(text "JUMP_IS_PC_OUT" (rect 333 235 435 249)(font "Arial" (font_size 8)))
+		(line (pt 456 240)(pt 440 240))
+	)
+	(port
+		(pt 456 256)
+		(output)
+		(text "DATA_FORMAT_OUT[2..0]" (rect 0 0 152 14)(font "Arial" (font_size 8)))
+		(text "DATA_FORMAT_OUT[2..0]" (rect 283 251 435 265)(font "Arial" (font_size 8)))
+		(line (pt 456 256)(pt 440 256)(line_width 3))
+	)
+	(port
+		(pt 456 272)
+		(output)
+		(text "REGW_SELECTOR_OUT[4..0]" (rect 0 0 166 14)(font "Arial" (font_size 8)))
+		(text "REGW_SELECTOR_OUT[4..0]" (rect 269 267 435 281)(font "Arial" (font_size 8)))
+		(line (pt 456 272)(pt 440 272)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 440 304))
+	)
+)

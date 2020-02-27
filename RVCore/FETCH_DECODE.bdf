@@ -1,0 +1,225 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 640 512 656 680)
+	(text "INPUT" (rect 0 15 10 43)(font "Arial" (font_size 6))(vertical))
+	(text "CLOCK" (rect 0 109 12 146)(font "Arial" )(vertical))
+	(pt 8 0)
+	(drawing
+		(line (pt 12 84)(pt 12 59))
+		(line (pt 4 84)(pt 4 59))
+		(line (pt 8 55)(pt 8 0))
+		(line (pt 12 84)(pt 4 84))
+		(line (pt 4 59)(pt 8 55))
+		(line (pt 12 59)(pt 8 55))
+	)
+	(rotate90)
+	(text "VCC" (rect 7 20 17 40)(font "Arial" (font_size 6))(vertical))
+)
+(pin
+	(input)
+	(rect 408 192 632 208)
+	(text "INPUT" (rect 181 0 209 10)(font "Arial" (font_size 6)))
+	(text "INSTRUCTION_IN[31..0]" (rect 5 0 130 12)(font "Arial" ))
+	(pt 224 8)
+	(drawing
+		(line (pt 140 12)(pt 165 12))
+		(line (pt 140 4)(pt 165 4))
+		(line (pt 169 8)(pt 224 8))
+		(line (pt 140 12)(pt 140 4))
+		(line (pt 165 4)(pt 169 8))
+		(line (pt 165 12)(pt 169 8))
+	)
+	(text "VCC" (rect 184 7 204 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 344 336 632 352)
+	(text "INPUT" (rect 245 0 273 10)(font "Arial" (font_size 6)))
+	(text "INSTRUCTION_ADDRESS_IN[31..0]" (rect 5 0 189 12)(font "Arial" ))
+	(pt 288 8)
+	(drawing
+		(line (pt 204 12)(pt 229 12))
+		(line (pt 204 4)(pt 229 4))
+		(line (pt 233 8)(pt 288 8))
+		(line (pt 204 12)(pt 204 4))
+		(line (pt 229 4)(pt 233 8))
+		(line (pt 229 12)(pt 233 8))
+	)
+	(text "VCC" (rect 248 7 268 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 928 160 1211 176)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "INSTRUCTION_CONTROLLER[31..0]" (rect 90 0 277 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 928 176 1267 192)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "INSTRUCTION_IMMEDATE_GENERATOR[31..0]" (rect 90 0 333 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 904 336 1194 352)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "INSTRUCTION_ADDRESS_OUT[31..0]" (rect 90 0 284 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 664 312 872 408)
+	(text "32BitRegister" (rect 5 0 80 14)(font "Arial" (font_size 8)))
+	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "INPUT[31..0]" (rect 0 0 68 14)(font "Arial" (font_size 8)))
+		(text "INPUT[31..0]" (rect 21 27 89 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLOCK" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "CLOCK" (rect 21 43 62 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "OUTPUT[31..0]" (rect 0 0 82 14)(font "Arial" (font_size 8)))
+		(text "OUTPUT[31..0]" (rect 105 27 187 41)(font "Arial" (font_size 8)))
+		(line (pt 208 32)(pt 192 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 80))
+	)
+)
+(symbol
+	(rect 664 168 872 264)
+	(text "32BitRegister" (rect 5 0 80 14)(font "Arial" (font_size 8)))
+	(text "instreg" (rect 8 80 41 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "INPUT[31..0]" (rect 0 0 68 14)(font "Arial" (font_size 8)))
+		(text "INPUT[31..0]" (rect 21 27 89 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLOCK" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "CLOCK" (rect 21 43 62 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "OUTPUT[31..0]" (rect 0 0 82 14)(font "Arial" (font_size 8)))
+		(text "OUTPUT[31..0]" (rect 105 27 187 41)(font "Arial" (font_size 8)))
+		(line (pt 208 32)(pt 192 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 80))
+	)
+)
+(connector
+	(pt 648 360)
+	(pt 664 360)
+)
+(connector
+	(pt 648 216)
+	(pt 648 360)
+)
+(connector
+	(pt 648 360)
+	(pt 648 512)
+)
+(connector
+	(pt 664 216)
+	(pt 648 216)
+)
+(connector
+	(pt 632 200)
+	(pt 664 200)
+	(bus)
+)
+(connector
+	(pt 664 344)
+	(pt 632 344)
+	(bus)
+)
+(connector
+	(pt 872 344)
+	(pt 904 344)
+	(bus)
+)
+(connector
+	(text "INST[31..0]" (rect 878 184 934 196)(font "Arial" ))
+	(pt 872 200)
+	(pt 928 200)
+	(bus)
+)
+(connector
+	(pt 928 184)
+	(pt 928 200)
+	(bus)
+)
+(connector
+	(pt 928 168)
+	(pt 928 184)
+	(bus)
+)
+(junction (pt 648 360))
+(junction (pt 928 184))

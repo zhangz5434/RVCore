@@ -1,0 +1,24 @@
+Library ieee;
+Use ieee.std_logic_1164.all;
+Use ieee.numeric_std.all;
+
+Entity ALUControl is
+	Port(
+		INST : IN std_logic_vector(6 downto 0);
+		BRANCH : OUT std_logic;
+		MemRead : OUT std_logic;
+		MemWrite : OUT std_logic;
+		MemToReg : OUT std_logic;
+		ALUOp : OUT std_logic(3 downto 0);
+		ALUR2 : OUT std_logic;
+		RegWrite : Out std_logic
+	);
+End Entity ALUControl;
+
+Architecture Behavioral of ALUControl is
+Begin
+	Process(INST) is
+	Begin
+		
+	End Process;
+End Architecture Behavioral;

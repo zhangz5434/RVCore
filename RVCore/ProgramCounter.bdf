@@ -1,0 +1,202 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect -48 344 136 360)
+	(text "INPUT" (rect 141 0 169 10)(font "Arial" (font_size 6)))
+	(text "SWITCHER_JMP" (rect 5 0 91 12)(font "Arial" ))
+	(pt 184 8)
+	(drawing
+		(line (pt 100 12)(pt 125 12))
+		(line (pt 100 4)(pt 125 4))
+		(line (pt 129 8)(pt 184 8))
+		(line (pt 100 12)(pt 100 4))
+		(line (pt 125 4)(pt 129 8))
+		(line (pt 125 12)(pt 129 8))
+	)
+	(text "VCC" (rect 144 7 164 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 208 432 376 448)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "CLOCK" (rect 5 0 43 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -112 360 136 376)
+	(text "INPUT" (rect 205 0 233 10)(font "Arial" (font_size 6)))
+	(text "INPUT_FROM_ADDER[31..0]" (rect 5 0 153 12)(font "Arial" ))
+	(pt 248 8)
+	(drawing
+		(line (pt 164 12)(pt 189 12))
+		(line (pt 164 4)(pt 189 4))
+		(line (pt 193 8)(pt 248 8))
+		(line (pt 164 12)(pt 164 4))
+		(line (pt 189 4)(pt 193 8))
+		(line (pt 189 12)(pt 193 8))
+	)
+	(text "VCC" (rect 208 7 228 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect -96 328 136 344)
+	(text "INPUT" (rect 189 0 217 10)(font "Arial" (font_size 6)))
+	(text "INPUT_FROM_JUMP[31..0]" (rect 5 0 144 12)(font "Arial" ))
+	(pt 232 8)
+	(drawing
+		(line (pt 148 12)(pt 173 12))
+		(line (pt 148 4)(pt 173 4))
+		(line (pt 177 8)(pt 232 8))
+		(line (pt 148 12)(pt 148 4))
+		(line (pt 173 4)(pt 177 8))
+		(line (pt 173 12)(pt 177 8))
+	)
+	(text "VCC" (rect 192 7 212 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 784 328 1007 344)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "NEXT_INST_ADDR[31..0]" (rect 90 0 217 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 448 304 656 400)
+	(text "32BitRegister" (rect 5 0 80 14)(font "Arial" (font_size 8)))
+	(text "PC_REG" (rect 8 80 52 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "INPUT[31..0]" (rect 0 0 68 14)(font "Arial" (font_size 8)))
+		(text "INPUT[31..0]" (rect 21 27 89 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLOCK" (rect 0 0 41 14)(font "Arial" (font_size 8)))
+		(text "CLOCK" (rect 21 43 62 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 208 32)
+		(output)
+		(text "OUTPUT[31..0]" (rect 0 0 82 14)(font "Arial" (font_size 8)))
+		(text "OUTPUT[31..0]" (rect 105 27 187 41)(font "Arial" (font_size 8)))
+		(line (pt 208 32)(pt 192 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 192 80))
+	)
+)
+(symbol
+	(rect 200 304 424 400)
+	(text "Mux32" (rect 5 0 42 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "INPUT_A[31..0]" (rect 0 0 84 14)(font "Arial" (font_size 8)))
+		(text "INPUT_A[31..0]" (rect 21 27 105 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "SWITCHER" (rect 0 0 61 14)(font "Arial" (font_size 8)))
+		(text "SWITCHER" (rect 21 43 82 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "INPUT_B[31..0]" (rect 0 0 83 14)(font "Arial" (font_size 8)))
+		(text "INPUT_B[31..0]" (rect 21 59 104 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "OUTPUT[31..0]" (rect 0 0 82 14)(font "Arial" (font_size 8)))
+		(text "OUTPUT[31..0]" (rect 121 27 203 41)(font "Arial" (font_size 8)))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 80))
+	)
+)
+(connector
+	(pt 656 336)
+	(pt 784 336)
+	(bus)
+)
+(connector
+	(pt 136 336)
+	(pt 200 336)
+	(bus)
+)
+(connector
+	(pt 136 352)
+	(pt 200 352)
+)
+(connector
+	(pt 136 368)
+	(pt 200 368)
+	(bus)
+)
+(connector
+	(pt 424 336)
+	(pt 448 336)
+	(bus)
+)
+(connector
+	(pt 448 352)
+	(pt 440 352)
+)
+(connector
+	(pt 440 352)
+	(pt 440 440)
+)
+(connector
+	(pt 440 440)
+	(pt 376 440)
+)

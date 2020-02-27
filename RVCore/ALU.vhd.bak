@@ -1,0 +1,11 @@
+Library ieee;
+Use ieee.std_logic_1164.all;
+Use ieee.numeric_std.all;
+
+Entity ALU is
+	Port (
+		INPUT_A : IN std_logic_vector(31 downto 0);
+		INPUT_B : IN std_logic_vector(31 downto 0);
+		
+		RESULT : OUT std_logic_vector(31 downto 0);
+	);
