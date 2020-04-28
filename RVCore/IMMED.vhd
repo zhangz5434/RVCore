@@ -11,7 +11,7 @@ End Entity IMMED;
 
 Architecture Behavioral of IMMED is
 	Signal TMP : std_logic_vector(11 downto 0);
-	Signal TMP2 : std_logic_vector(19 downto 0);
+	Signal TMP2 : std_logic_vector(20 downto 0);
 	Signal TMP3 : std_logic_vector(12 downto 0);
 Begin
 	Process (INSTRUCTION) is
@@ -22,7 +22,7 @@ Begin
 			when "0010111" => --U TYPE	
 				IMMEDATE <= INSTRUCTION(31 downto 12) & "000000000000";
 			when "1101111" => --J TYPE
-				TMP2 <= INSTRUCTION(31) & INSTRUCTION(19 downto 12) & INSTRUCTION(20) & INSTRUCTION(30 downto 21);
+				TMP2 <= INSTRUCTION(31) & INSTRUCTION(19 downto 12) & INSTRUCTION(20) & INSTRUCTION(30 downto 21) & '0';
 				IMMEDATE <= std_logic_vector(resize(signed(TMP2),32));
 			when "1100111" => --I TYPE
 				TMP <= INSTRUCTION(31 downto 20);
